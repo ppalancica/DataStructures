@@ -20,18 +20,51 @@ extension Array where Element: Comparable {
         
         return false
     }
+    
+    func indexOfFirstOccurenceOf(element: Element) -> Int {
+        
+        var index = 0
+        
+        for item in self {
+            if (item == element) {
+                return index
+            }
+            
+            index = index + 1
+        }
+        
+        return -1
+    }
 }
 
 class SearchTests {
     
     static func run() {
         testLinearSearch()
+        testIndexOfFirstOccurenceOf()
     }
     
-    static let numbers: Array<Int> = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    static var numbers: Array<Int> = []
     
     static func testLinearSearch() {
+        
+        numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        
         let contains5 = numbers.linearSearch(element: 5)
         assert(contains5 == true)
+        
+        let contains20 = numbers.linearSearch(element: 20)
+        assert(contains20 == false)
+    }
+    
+    static func testIndexOfFirstOccurenceOf() {
+        
+        numbers = [1, 2, 3, 1, 2, 3]
+        
+        let firstIndexOf3 = numbers.indexOfFirstOccurenceOf(element: 3)
+        assert(firstIndexOf3 == 2)
+        
+        let firstIndexOf10 = numbers.indexOfFirstOccurenceOf(element: 10)
+        assert(firstIndexOf10 == -1)
     }
 }
