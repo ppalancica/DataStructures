@@ -11,5 +11,6 @@ import Foundation
 print("Start...")
 
 SearchTests.run()
+SinglyLinkedListTests.run()
 
 print("End...")
