@@ -10,10 +10,12 @@ import Foundation
 
 extension Array where Element: Comparable {
     
-    func linearSearch(element: Element) -> Bool {
-        
-        for item in self {
-            if (item == element) {
+    func linearSearch(element: Element) -> Bool
+    {
+        for item in self
+        {
+            if item == element
+            {
                 return true
             }
         }
@@ -21,33 +23,32 @@ extension Array where Element: Comparable {
         return false
     }
     
-    func indexOfFirstOccurenceOf(element: Element) -> Int {
-        
-        var index = 0
-        
-        for item in self {
-            if (item == element) {
-                return index
+    func indexOfFirstOccurenceOf(element: Element) -> Int
+    {
+        for i in 0..<self.count
+        {
+            if self[i] == element
+            {
+                return i
             }
-            
-            index = index + 1
         }
         
         return -1
     }
 }
 
-class SearchTests {
-    
-    static func run() {
+class SearchTests
+{
+    static func run()
+    {
         testLinearSearch()
         testIndexOfFirstOccurenceOf()
     }
     
-    static var numbers: Array<Int> = []
+    static var numbers: Array<Int>!
     
-    static func testLinearSearch() {
-        
+    static func testLinearSearch()
+    {
         numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
         
         let contains5 = numbers.linearSearch(element: 5)
@@ -57,8 +58,8 @@ class SearchTests {
         assert(contains20 == false)
     }
     
-    static func testIndexOfFirstOccurenceOf() {
-        
+    static func testIndexOfFirstOccurenceOf()
+    {
         numbers = [1, 2, 3, 1, 2, 3]
         
         let firstIndexOf3 = numbers.indexOfFirstOccurenceOf(element: 3)

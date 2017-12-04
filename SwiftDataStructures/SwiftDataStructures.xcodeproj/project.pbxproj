@@ -10,6 +10,7 @@
 		B4609A041FD0EDB7002EEA18 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4609A031FD0EDB7002EEA18 /* main.swift */; };
 		B4609A0B1FD0EDFA002EEA18 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4609A0A1FD0EDFA002EEA18 /* Search.swift */; };
 		B4609A201FD385AF002EEA18 /* SinglyLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4609A1F1FD385AF002EEA18 /* SinglyLinkedList.swift */; };
+		B4609A221FD50AD4002EEA18 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4609A211FD50AD4002EEA18 /* Queue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		B4609A031FD0EDB7002EEA18 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B4609A0A1FD0EDFA002EEA18 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		B4609A1F1FD385AF002EEA18 /* SinglyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SinglyLinkedList.swift; sourceTree = "<group>"; };
+		B4609A211FD50AD4002EEA18 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				B4609A031FD0EDB7002EEA18 /* main.swift */,
 				B4609A0A1FD0EDFA002EEA18 /* Search.swift */,
 				B4609A1F1FD385AF002EEA18 /* SinglyLinkedList.swift */,
+				B4609A211FD50AD4002EEA18 /* Queue.swift */,
 			);
 			path = SwiftDataStructures;
 			sourceTree = "<group>";
@@ -129,6 +132,7 @@
 				B4609A201FD385AF002EEA18 /* SinglyLinkedList.swift in Sources */,
 				B4609A041FD0EDB7002EEA18 /* main.swift in Sources */,
 				B4609A0B1FD0EDFA002EEA18 /* Search.swift in Sources */,
+				B4609A221FD50AD4002EEA18 /* Queue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
